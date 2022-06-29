@@ -5,6 +5,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 
@@ -19,9 +20,17 @@ public class Hashtag {
     private Collection<Post> posts;
 
 
-    public Hashtag(String hashtag, Post[] posts) {
+    public Hashtag(String hashtag) {
         this.hashtag = hashtag;
-        this.posts = Arrays.asList(posts);
+        this.posts = new ArrayList<Post>();
+    }
+
+    @Override
+    public String toString() {
+        return "Hashtag{" +
+                "id=" + id +
+                ", hashtag='" + hashtag + '\'' +
+                '}';
     }
 
     public Hashtag() {
@@ -38,4 +47,6 @@ public class Hashtag {
     public Collection<Post> getPosts() {
         return posts;
     }
+
+
 }

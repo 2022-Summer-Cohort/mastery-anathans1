@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Hashtag</title>
+    <link rel="icon" href="/assets/icon.png">
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/layout.css" />
+    <link rel="stylesheet" href="/src/main/resources/static/css/style.css">
+    <link rel="stylesheet" href="/src/main/resources/static/css/layout.css">
+</head>
+
+<body>
+<div class="container">
+    <header class="header">
+        <h1 class="header__title">Surviving Coding Boot Camp</h1>
+        <nav class="header__nav">
+            <div class="header__nav-item"><a href="/" class="header__nav-link">Home</a></div>
+            <div class="header__nav-item"><a href="/hashtags" class="header__nav-link">Hashtags</a></div>
+        </nav>
+    </header>
+    <main class="main-content">
+        <section class="main-content__post post">
+<!--            <h3 class="post__topic-title main-content__topic-title">-->
+<!--                <a th:text="'#' + ${hashtag.hashtag}'"  class="main-content__topic-link post__topic-link">Hashtag</a>-->
+<!--            </h3>-->
+
+
+            <h2 th:text="'#' + ${hashtag.hashtag}'" class="post__title main-content__topic-title">Hashtag</h2>
+            <ul class="main-content__nav posts__nav">
+                <li th:each = "post:${post.posts}">
+                <div>
+                    <a href="'post/'"+${post.title}></a>
+
+                </div>
+                </li>
+            </ul>
+
+<!--            <p th:text="${post.content}" class="post__content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque blanditiis, aut quae fuga id quis ut.-->
+<!--                Eligendi necessitatibus blanditiis officia, odio deleniti natus molestiae fugiat ex quod vel aliquam illum.-->
+            </p>
+        </section>
+    </main>
+</div>
+
+</body>
+
+</html>
