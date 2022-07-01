@@ -31,26 +31,6 @@
                     <a th:text="${post.title}" th:href="'/posts/'+${post.id}" href="#"
                        class="posts__nav-link"></a>
                 </div>
-                <form class = "post-form" th:action="'/topics/' + ${topic.id} + '/addPost'"  method="post">
-                    <br>
-                    <br>
-                    <label for="postTitle">
-                        Enter Post Title...
-                    </label>
-                    <input type="text" id="postTitle" name="title">
-                    <br>
-                    <br>
-                    <label for="postAuthor">
-                        Enter Author...
-                    </label>
-                    <input type="text" id="postAuthor" name="author">
-                    <br>
-                    <br>
-                    <textarea name="content" id="PostContent" cols="30" rows="5" placeholder="Add your blog post here..."></textarea>
-                    <br>
-                    <br>
-                    <input type="submit" value="Submit">
-                </form>
             </nav>
         </section>
     </main>
