@@ -14,14 +14,14 @@ public class Hashtag {
     @Id
     @GeneratedValue
     private long id;
-    private String hashtag;
+    private String hashtagName;
 
     @ManyToMany(mappedBy = "hashtags")
     private Collection<Post> posts;
 
 
     public Hashtag(String hashtag) {
-        this.hashtag = hashtag;
+        this.hashtagName = hashtag;
         this.posts = new ArrayList<Post>();
     }
 
@@ -29,7 +29,7 @@ public class Hashtag {
     public String toString() {
         return "Hashtag{" +
                 "id=" + id +
-                ", hashtag='" + hashtag + '\'' +
+                ", hashtag='" + hashtagName + '\'' +
                 '}';
     }
 
@@ -40,8 +40,8 @@ public class Hashtag {
         return id;
     }
 
-    public String getHashtag() {
-        return hashtag;
+    public String getHashtagName() {
+        return hashtagName;
     }
 
     public Collection<Post> getPosts() {

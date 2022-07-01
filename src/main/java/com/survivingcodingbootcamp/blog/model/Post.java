@@ -17,15 +17,22 @@ public class Post {
     @Lob
     private String content;
 
-    protected Post() {
-    }
 
-    public Post(String title, Topic topic, String content,Hashtag[] hashtags) {
+
+    public Post(String title, Topic topic, String content,Hashtag... hashtags) {
         this.title = title;
         this.topic = topic;
         this.content = content;
         this.hashtags = Arrays.asList(hashtags);
 
+    }
+
+    public Post(String title, Topic topic, String content) {
+        this.title = title;
+        this.topic = topic;
+        this.content = content;
+    }
+    protected Post() {
     }
 
     public Long getId() {
@@ -46,6 +53,9 @@ public class Post {
 
     public Collection<Hashtag> getHashtags() {
         return hashtags;
+    }
+    public void addHashtag(Hashtag hashtagName){
+        hashtags.add(hashtagName);
     }
 
     @Override

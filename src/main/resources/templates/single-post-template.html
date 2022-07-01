@@ -30,6 +30,14 @@
                     Eligendi necessitatibus blanditiis officia, odio deleniti natus molestiae fugiat ex quod vel aliquam illum.
                 </p>
             </section>
+            <div class="reviewForm">
+
+                <form method="post" th:action="'/posts/' + ${post.id} + '/addHashtag'">>
+                    <label for="newHashtag">Add Hashtag: #</label>
+                    <input type="text" id="newHashtag" name="hashtagToAdd">
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
         </main>
     </div>
 

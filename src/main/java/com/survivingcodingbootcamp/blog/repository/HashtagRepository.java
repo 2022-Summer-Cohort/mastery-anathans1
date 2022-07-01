@@ -8,5 +8,5 @@ import java.util.Optional;
 
 public interface HashtagRepository extends CrudRepository<Hashtag, Long> {
 
-    Optional<Hashtag> findByHashtag(String hashtag);
+    Optional<Hashtag> findByHashtagName(String hashtagName);
 }

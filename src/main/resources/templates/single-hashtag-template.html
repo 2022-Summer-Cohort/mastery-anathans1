@@ -28,11 +28,11 @@
 <!--            </h3>-->
 
 
-            <h2 th:text="'#' + ${hashtag.hashtag}'" class="post__title main-content__topic-title">Hashtag</h2>
+            <h2 th:text="${hashtag.hashtagName}" class="post__title main-content__topic-title">Hashtag</h2>
             <ul class="main-content__nav posts__nav">
-                <li th:each = "post:${post.posts}">
+                <li th:each = "post:${hashtag.posts}">
                 <div>
-                    <a href="'post/'"+${post.title}></a>
+                    <a th:href="'/posts/'+${post.id}" th:text="${post.title}" ></a>
 
                 </div>
                 </li>
