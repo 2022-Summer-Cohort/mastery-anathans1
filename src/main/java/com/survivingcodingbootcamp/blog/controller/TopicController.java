@@ -33,9 +33,9 @@ public class TopicController {
         return "single-topic-template";
     }
     @PostMapping("/{id}/addPost")
-    private String addPost(@PathVariable Long id, @RequestParam String title, @RequestParam String content){
+    private String addPost(@PathVariable Long id, @RequestParam String title, @RequestParam String author, @RequestParam String content){
         Topic topic = topicRepo.findById(id).get();
-        Post post = new Post(title, topic, content);
+        Post post = new Post(title, author, topic, content);
         postRepo.save(post);
 
         return "redirect:/topics/" + id;

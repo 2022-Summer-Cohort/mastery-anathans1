@@ -14,24 +14,24 @@ hashtags and a hashtag can be associated with different posts.
 (many to many pojo)**~~
 
 ~~-Create a single-hashtag-template.html file that matches the uses the same style.css file as the other templates 
-and has a similar style to the other pages.~~ This page should display the posts associated with it's 
+and has a similar style to the other pages.~~ ~~This page should display the posts associated with it's 
 specfic hashtag and provide links to those posts.
-(hashtag template, import css, add above functionality thymeleaf and links)
+(hashtag template, import css, add above functionality thymeleaf and links)~~
 
 ~~-Create a all-hashtags-template.html file that that matches the uses the same style.css file as the other templates 
-and has a similar style to the other pages.~~ This page should display all hashtags in the application and provide links to those individual hashtags.
-(all hashtag template, import css, add above functionality thymeleaf and links)
+and has a similar style to the other pages.~~ ~~This page should display all hashtags in the application and provide links to those individual hashtags.
+(all hashtag template, import css, add above functionality thymeleaf and links)~~
 
 ~~-Add an HTML form to the single-post-template.html that allows you to add a hashtag to the post you are viewing.
 (add form to template already made)~~
 
 
--Create a HashTagController to provide three path mappings, one for individual hashtags, one for all hashtags, 
+~~-Create a HashTagController to provide three path mappings, one for individual hashtags, one for all hashtags, 
 and one for adding a hashtag to the system.
-(create a controller with three path mappings labeled like above)
+(create a controller with three path mappings labeled like above)~~
 
--Add a link to the all hashtags endpoint to the header's nav list on all pages.
-(add link to allHashtag template)
+~~-Add a link to the all hashtags endpoint to the header's nav list on all pages.
+(add link to allHashtag template)~~
 
 -Add a field to the Post POJO for the post's author. This can be a String. Then change the single-post-template 
 and the Post constructor to add an author name. Go to the populator and add an author name to the posts.

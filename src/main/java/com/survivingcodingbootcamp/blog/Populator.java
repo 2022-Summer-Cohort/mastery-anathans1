@@ -49,7 +49,7 @@ public class Populator implements CommandLineRunner {
         topicRepo.save(topic1);
 
         Hashtag[] post1Hashtags = {challenging,rewarding};
-        Post post1 = new Post("TDD For Fun and Profit", topic1, "Lorem ipsum dolor sit amet, consectetur " +
+        Post post1 = new Post("TDD For Fun and Profit", "WCCI", topic1, "Lorem ipsum dolor sit amet, consectetur " +
                 "adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim" +
                 " veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis " +
                 "aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. " +
@@ -58,7 +58,7 @@ public class Populator implements CommandLineRunner {
         postRepo.save(post1);
 
         Hashtag[] post2Hashtags = {walkInThePark,confusing};
-        Post post2 = new Post("Test the Fear Away", topic1, "Lorem ipsum dolor sit amet, consectetur " +
+        Post post2 = new Post("Test the Fear Away", "WCCI", topic1, "Lorem ipsum dolor sit amet, consectetur " +
                 "adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim" +
                 " veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis " +
                 "aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. " +
@@ -67,7 +67,7 @@ public class Populator implements CommandLineRunner {
         postRepo.save(post2);
 
         Hashtag[] post3Hashtags = {preferenceEnjoyable,trickyAtFirst};
-        Post post3 = new Post("Unit Tests and You", topic1, "Lorem ipsum dolor sit amet, consectetur " +
+        Post post3 = new Post("Unit Tests and You", "WCCI", topic1, "Lorem ipsum dolor sit amet, consectetur " +
                 "adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim" +
                 " veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis " +
                 "aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. " +
